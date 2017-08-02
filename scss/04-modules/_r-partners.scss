@@ -1,6 +1,14 @@
 .r-partners {
-  .ptn {
+  .par {
     float: left;
     width: (100/3)*1%;
+    text-align: center;
+  }
+  h2 {
+    @include h2-up;
+    text-align: center;
+  }
+  p {
+    margin: 0px;
   }
 }

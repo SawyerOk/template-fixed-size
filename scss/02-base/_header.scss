@@ -5,25 +5,11 @@ header {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   nav {
-
+    @include nav-b;
     ul {
-
-      list-style: none;
       float: right;
       li {
-        display: inline-block;
-        float: left;
-        margin: 15px;
-        padding-right: 5px;
         border-bottom: 2px solid #fff;
-        padding-bottom: 5px;
-
-        a {
-          text-decoration: none;
-          font-size: 16px;
-          text-transform: uppercase;
-          color: #fff;
-        }
       }
     }
   }

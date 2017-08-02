@@ -8,54 +8,73 @@ header {
   header h1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
   header nav ul {
-    list-style: none;
-    float: right; }
+    list-style: none; }
     header nav ul li {
       display: inline-block;
       float: left;
       margin: 15px;
       padding-right: 5px;
-      border-bottom: 2px solid #fff;
       padding-bottom: 5px; }
       header nav ul li a {
         text-decoration: none;
         font-size: 16px;
         text-transform: uppercase;
         color: #fff; }
+  header nav ul {
+    float: right; }
+    header nav ul li {
+      border-bottom: 2px solid #fff; }
 
 footer {
   width: 960px;
   margin: 0 auto;
   height: 400px;
+  color: #fff;
   background-color: #333; }
 
-.f-content {
-  float: left; }
+nav {
+  clear: both; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      float: left;
+      margin: 15px;
+      padding-right: 5px;
+      padding-bottom: 5px; }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff; }
+
+.col-f {
+  width: 460px; }
+
+.f-contact {
+  float: right; }
 
 .f-more {
   float: left; }
 
 .col-f-min {
-  float: left;
-  width: 50%; }
-
-.col-f {
-  width: 50%; }
+  float: left; }
 
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
   body a {
     text-decoration: none; }
     body a:hover {
       cursor: pointer; }
 
 #header-home {
-  background: url(http://lorempixel.com/960/400/city/6/) no-repeat;
+  background: url(http://lorempixel.com/960/350/city/1/) no-repeat;
   width: 960px;
   margin: auto;
-  height: 400px; }
+  height: 350px; }
 
 #container {
   width: 960px;
@@ -79,6 +98,7 @@ body {
   text-align: center;
   height: 350px; }
   .r-services h2 {
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: 200;
     font-size: 16px;
@@ -119,13 +139,37 @@ body {
     font-family: 'Raleway', sans-serif;
     padding-top: 60px; }
 
-.r-partners .ptn {
+.r-partners .par {
   float: left;
-  width: 33.33333%; }
+  width: 33.33333%;
+  text-align: center; }
+.r-partners h2 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: center; }
+.r-partners p {
+  margin: 0px; }
 
 .r-form {
-  height: 300px;
-  background: aqua; }
+  background: url(http://lorempixel.com/960/300/city/2/);
+  height: 300px; }
+  .r-form fieldset.fs-l, .r-form fieldset.fs-r {
+    width: 440px; }
+  .r-form .fs-l {
+    float: left; }
+    .r-form .fs-l .d-i {
+      float: right; }
+    .r-form .fs-l input {
+      display: block; }
+  .r-form .fs-r {
+    float: right; }
+    .r-form .fs-r button {
+      bottom: 0; }
+    .r-form .fs-r textarea {
+      resize: none; }
 
 .h-tagline {
   padding-top: 40px;

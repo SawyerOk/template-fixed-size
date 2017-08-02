@@ -6,10 +6,7 @@ $active : #eead45;
   height: 350px;
 
   h2 {
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 16px;
-    padding-top: 20px;
+    @include h2-up;
   }
 
   .ser-group {

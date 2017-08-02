@@ -9,3 +9,11 @@
 @mixin r-w-img {
   font-family: 'Josefin Slab', serif;
 }
+
+@mixin h2-up {
+  @include f-sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 16px;
+  padding-top: 20px;
+}

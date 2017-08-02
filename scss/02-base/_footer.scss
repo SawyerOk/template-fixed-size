@@ -2,24 +2,26 @@ footer{
   width: 960px;
   margin: 0 auto;
   height: 400px;
+  color: #fff;
   background-color: #333;
 }
 
-.f-content{
-  float: left;
+nav {
+  clear: both;
+  @include nav-b;
+}
+.col-f {
+  width: 960/2*1px - 20px;
+}
+.f-contact{
+  float: right;
 }
 
 .f-more{
   float: left;
-
 }
 
 
 .col-f-min {
   float: left;
-  width: 100/2*1%;
-}
-
-.col-f {
-  width: 100/2*1%;
 }

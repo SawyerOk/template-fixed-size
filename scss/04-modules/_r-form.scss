@@ -1,5 +1,32 @@
 .r-form{
-  
+  background: url(http://lorempixel.com/960/300/city/2/);
   height: 300px;
-  background: aqua;
+
+  fieldset {
+    // border: none;
+  }
+  fieldset.fs-l,, fieldset.fs-r {
+    width: 960/2*1px - 40px;
+  }
+  .fs-l {
+    .d-i {
+      float: right;
+    }
+    float: left;
+    input {
+      display: block;
+    }
+  }
+  .fs-r {
+    float: right;
+    button {
+      bottom: 0;
+    }
+    textarea {
+      resize: none;
+    }
+
+  }
+
+
 }
