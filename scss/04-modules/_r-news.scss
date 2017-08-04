@@ -1,5 +1,6 @@
 .r-news{
     @include news-font;
+    padding: 10px 25px;
   .col-th {
     height: 250px;
     float: left;
@@ -14,5 +15,5 @@
       padding-left: 140px;
     }
   }
-  
+
 }

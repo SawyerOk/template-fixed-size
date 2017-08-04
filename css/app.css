@@ -19,46 +19,54 @@ header {
         text-decoration: none;
         font-size: 16px;
         text-transform: uppercase;
-        color: #fff; }
+        color: #fff;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  header nav .active {
+    color: #ffa500; }
   header nav ul {
     float: right; }
-    header nav ul li {
+    header nav ul a {
+      padding-bottom: 5px;
       border-bottom: 2px solid #fff; }
+      header nav ul a.active {
+        border-bottom: 2px solid #ffa500; }
 
 footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 25px;
   width: 960px;
   margin: 0 auto;
-  height: 400px;
+  height: 350px;
   color: #fff;
   background-color: #333; }
-
-nav {
-  clear: both; }
-  nav ul {
-    list-style: none; }
-    nav ul li {
-      display: inline-block;
-      float: left;
-      margin: 15px;
-      padding-right: 5px;
-      padding-bottom: 5px; }
-      nav ul li a {
-        text-decoration: none;
-        font-size: 16px;
-        text-transform: uppercase;
-        color: #fff; }
-
-.col-f {
-  width: 460px; }
-
-.f-contact {
-  float: right; }
-
-.f-more {
-  float: left; }
-
-.col-f-min {
-  float: left; }
+  footer nav {
+    clear: both; }
+    footer nav ul {
+      list-style: none; }
+      footer nav ul li {
+        display: inline-block;
+        float: left;
+        margin: 15px;
+        padding-right: 5px;
+        padding-bottom: 5px; }
+        footer nav ul li a {
+          text-decoration: none;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #fff;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+    footer nav .active {
+      color: #ffa500; }
+  footer .col-f {
+    width: 420px; }
+  footer .f-contact {
+    float: right; }
+  footer .f-more {
+    float: left; }
+    footer .f-more p {
+      line-height: 2.0; }
 
 body {
   -webkit-box-sizing: border-box;
@@ -81,11 +89,12 @@ body {
   margin: auto; }
 
 .r-news {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 25px; }
   .r-news .col-th {
     height: 250px;
     float: left;
-    width: 33.33333%;
+    width: 33.3333333333%;
     padding: 10px 5px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -141,8 +150,23 @@ body {
 
 .r-partners .par {
   float: left;
-  width: 33.33333%;
+  width: 33.3333333333%;
   text-align: center; }
+  .r-partners .par a {
+    color: #fff;
+    background: #111;
+    padding: 2px 5px;
+    margin-left: -2px;
+    font-weight: 800; }
+    .r-partners .par a:hover {
+      color: #111;
+      background: #fff;
+      border: 1px solid #111; }
+    .r-partners .par a.mak {
+      background: #ffa500; }
+      .r-partners .par a.mak:hover {
+        color: #ffa500;
+        background: #fff; }
 .r-partners h2 {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -151,17 +175,27 @@ body {
   padding-top: 20px;
   text-align: center; }
 .r-partners p {
-  margin: 0px; }
+  margin: 0px;
+  margin-bottom: 5px; }
 
 .r-form {
   background: url(http://lorempixel.com/960/300/city/2/);
   height: 300px; }
+  .r-form fieldset {
+    border: none; }
   .r-form fieldset.fs-l, .r-form fieldset.fs-r {
-    width: 440px; }
+    width: 440px;
+    margin-top: 25px; }
   .r-form .fs-l {
     float: left; }
     .r-form .fs-l .d-i {
       float: right; }
+      .r-form .fs-l .d-i input {
+        height: 30px; }
+        .r-form .fs-l .d-i input:focus {
+          border: 2px green solid; }
+      .r-form .fs-l .d-i input[type="text"] {
+        margin-bottom: 32px; }
     .r-form .fs-l input {
       display: block; }
   .r-form .fs-r {
@@ -179,12 +213,10 @@ body {
   .h-tagline a {
     margin-top: 40px;
     color: #fff;
-    text-decoration: none;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  .h-tagline p {
+    text-decoration: none; }
+  .h-tagline p, .h-tagline h1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
   .h-tagline h1 {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin-bottom: 60px; }
   .h-tagline .btn-h {
     width: 40%;
@@ -192,7 +224,5 @@ body {
     text-align: center;
     padding: 10px 20px;
     border: 2px solid #fff; }
-  .h-tagline .active {
-    color: red; }
 
 /*# sourceMappingURL=app.css.map */

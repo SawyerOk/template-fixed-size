@@ -8,17 +8,13 @@
       margin-top: 40px;
       color: #fff;
       text-decoration: none;
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
 
-  p {
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  p,h1 {
+    @include shadow-t;
   }
   h1 {
-
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
       margin-bottom: 60px;
   }
 
@@ -28,11 +24,6 @@
     text-align: center;
     padding: 10px 20px;
     border: 2px solid #fff;
-  }
-
-  .active {
-
-      color: red;
   }
 
 }

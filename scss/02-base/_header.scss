@@ -6,10 +6,15 @@ header {
   }
   nav {
     @include nav-b;
+
     ul {
       float: right;
-      li {
+       a {
+        padding-bottom: 5px;
         border-bottom: 2px solid #fff;
+        &.active{
+          border-bottom: 2px solid $ac-col;
+        }
       }
     }
   }

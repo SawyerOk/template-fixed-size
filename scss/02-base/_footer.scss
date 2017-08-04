@@ -1,27 +1,30 @@
 footer{
+  @include b-sng;
+  padding: 10px 25px;
   width: 960px;
   margin: 0 auto;
-  height: 400px;
+  height: 350px;
   color: #fff;
   background-color: #333;
-}
-
-nav {
-  clear: both;
-  @include nav-b;
-}
-.col-f {
-  width: 960/2*1px - 20px;
-}
-.f-contact{
-  float: right;
-}
-
-.f-more{
-  float: left;
-}
 
 
-.col-f-min {
-  float: left;
+
+  nav {
+    clear: both;
+    @include nav-b;
+  }
+  .col-f {
+    width: 960/2*1px - 60px;
+  }
+  .f-contact{
+    float: right;
+  }
+
+  .f-more{
+    float: left;
+
+    p {
+      line-height: 2.0;
+    }
+  }
 }

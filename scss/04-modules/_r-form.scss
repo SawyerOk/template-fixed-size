@@ -3,16 +3,26 @@
   height: 300px;
 
   fieldset {
-    // border: none;
+    border: none;
   }
   fieldset.fs-l,, fieldset.fs-r {
     width: 960/2*1px - 40px;
+    margin-top: 25px;
   }
   .fs-l {
+    float: left;
     .d-i {
       float: right;
+      input {
+        height: 30px;
+        &:focus {
+          border: 2px green solid;
+        }
+      }
+      input[type="text"]{
+        margin-bottom: 32px;
+      };
     }
-    float: left;
     input {
       display: block;
     }
