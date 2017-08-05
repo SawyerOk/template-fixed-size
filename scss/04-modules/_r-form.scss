@@ -1,6 +1,12 @@
 .r-form{
-  background: url(http://lorempixel.com/960/300/city/2/);
+  background: url(http://lorempixel.com/960/300/nature/2/);
   height: 300px;
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+  }
 
   fieldset {
     border: none;

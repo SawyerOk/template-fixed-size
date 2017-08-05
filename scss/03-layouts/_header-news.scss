@@ -1,0 +1,39 @@
+#header-news {
+
+
+
+  nav {
+    a {
+      color: black;
+      &.active {
+        color: $ac-col;
+      }
+    }
+  }
+
+  .news-c {
+    background : url(http://lorempixel.com/960/200/city/3/) no-repeat;
+    height: 200px;
+    p, h2 {
+      margin-left: 15px;
+    }
+
+    h2 {
+      font-size: 42px;
+      margin-top: 10px;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 800;
+      padding-top: 40px;
+    }
+  }
+
+  .active {
+    color : $ac-col;
+  }
+
+
+}

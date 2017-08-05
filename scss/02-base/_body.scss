@@ -1,11 +1,16 @@
 body {
-    @include b-sng;
-    @include news-font;
-  a{
-    text-decoration: none;
-
-    &:hover {
-      cursor: pointer;
+  @include b-sng;
+  @include news-font;
+  ul {
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
+
 }
