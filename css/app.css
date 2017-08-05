@@ -9,6 +9,17 @@ header {
   font-family: 'Lato', sans-serif; }
   header h1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  header p, header h2 {
+    margin-left: 15px; }
+  header h2 {
+    font-size: 42px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: 400; }
+  header p {
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 40px; }
   header nav ul {
     list-style: none; }
     header nav ul li {
@@ -32,6 +43,9 @@ header {
       border-bottom: 2px solid #fff; }
       header nav ul a.active {
         border-bottom: 2px solid #ffa500; }
+  header .header-img {
+    background: url(http://lorempixel.com/960/200/city/3/) no-repeat;
+    height: 200px; }
 
 footer {
   -webkit-box-sizing: border-box;
@@ -89,32 +103,9 @@ body {
 #container {
   width: 960px;
   margin: auto; }
-
-#header-news nav a {
-  color: black; }
-  #header-news nav a.active {
-    color: #ffa500; }
-#header-news .news-c {
-  background: url(http://lorempixel.com/960/200/city/3/) no-repeat;
-  height: 200px; }
-  #header-news .news-c p, #header-news .news-c h2 {
-    margin-left: 15px; }
-  #header-news .news-c h2 {
-    font-size: 42px;
-    margin-top: 10px;
-    letter-spacing: 3px;
-    font-weight: 400; }
-  #header-news .news-c p {
-    font-size: 18px;
-    font-weight: 800;
-    padding-top: 40px; }
-#header-news .active {
-  color: #ffa500; }
-
-.r-news {
-  font-family: 'Raleway', sans-serif;
-  padding: 10px 25px; }
-  .r-news .col-th {
+  #container h2, #container h3, #container h4 {
+    text-align: center; }
+  #container .col-th {
     height: 250px;
     float: left;
     width: 33.3333333333%;
@@ -122,8 +113,19 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .r-news .col-th h2 {
-      padding-left: 140px; }
+
+#header-news nav a {
+  color: black; }
+  #header-news nav a.active {
+    color: #ffa500; }
+#header-news .active {
+  color: #ffa500; }
+
+.r-news {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 25px; }
+  .r-news .col-th h2 {
+    padding-left: 140px; }
 
 .r-services {
   background: #eee;
@@ -171,35 +173,37 @@ body {
     font-family: 'Raleway', sans-serif;
     padding-top: 60px; }
 
-.r-partners .par {
-  float: left;
-  width: 33.3333333333%;
-  text-align: center; }
-  .r-partners .par a {
-    color: #fff;
-    background: #111;
-    padding: 2px 5px;
-    margin-left: -2px;
-    font-weight: 800; }
-    .r-partners .par a:hover {
-      color: #111;
-      background: #fff;
-      border: 1px solid #111; }
-    .r-partners .par a.mak {
-      background: #ffa500; }
-      .r-partners .par a.mak:hover {
-        color: #ffa500;
-        background: #fff; }
-.r-partners h2 {
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 16px;
-  padding-top: 20px;
-  text-align: center; }
-.r-partners p {
-  margin: 0px;
-  margin-bottom: 5px; }
+.r-partners {
+  height: 300px; }
+  .r-partners .par {
+    float: left;
+    width: 33.3333333333%;
+    text-align: center; }
+    .r-partners .par a {
+      color: #fff;
+      background: #111;
+      padding: 2px 5px;
+      margin-left: -2px;
+      font-weight: 800; }
+      .r-partners .par a:hover {
+        color: #111;
+        background: #fff;
+        border: 1px solid #111; }
+      .r-partners .par a.mak {
+        background: #ffa500; }
+        .r-partners .par a.mak:hover {
+          color: #ffa500;
+          background: #fff; }
+  .r-partners h2 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: center; }
+  .r-partners p {
+    margin: 0px;
+    margin-bottom: 5px; }
 
 .r-form {
   background: url(http://lorempixel.com/960/300/nature/2/);
@@ -317,5 +321,40 @@ body {
       margin-bottom: 10px; }
   .news-aside select {
     padding: 5px; }
+
+.about-info {
+  height: 450px;
+  background: #eee; }
+  .about-info h2 {
+    padding-top: 20px; }
+  .about-info ul li {
+    margin-top: 15px; }
+    .about-info ul li a {
+      text-transform: capitalize;
+      color: #000; }
+      .about-info ul li a:hover {
+        color: #666; }
+
+.r-about .col-th article.news-post {
+  background: #ddd;
+  position: relative;
+  top: -74px; }
+  .r-about .col-th article.news-post h2 {
+    background: #fff;
+    padding: 8px;
+    text-align: left; }
+  .r-about .col-th article.news-post h3, .r-about .col-th article.news-post p {
+    margin: 5px; }
+  .r-about .col-th article.news-post p {
+    font-size: 12px; }
+  .r-about .col-th article.news-post h3 {
+    margin-top: 0;
+    font-size: 16px; }
+  .r-about .col-th article.news-post em, .r-about .col-th article.news-post span {
+    font-size: 10px; }
+  .r-about .col-th article.news-post .post-img {
+    text-align: center; }
+.r-about .col-th .post-content {
+  padding: 5px 10px; }
 
 /*# sourceMappingURL=app.css.map */

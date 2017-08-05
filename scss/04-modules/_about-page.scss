@@ -1,0 +1,55 @@
+.about-info {
+  height: 450px;
+  background: #eee;
+  h2 {
+    padding-top: 20px;
+  }
+  ul {
+    li {
+      margin-top: 15px;
+      a {
+          text-transform: capitalize;
+          color: #000;
+          &:hover {
+            color: #666;
+          }
+      }
+
+    }
+  }
+}
+
+.r-about {
+  .col-th {
+    article.news-post {
+      background: #ddd;
+      position: relative;
+      top: -74px;
+      h2 {
+        background: #fff;
+        padding: 8px;
+        text-align: left;
+      }
+      h3, p{
+        margin: 5px;
+      }
+      p {
+        font-size: 12px;
+      }
+      h3 {
+        margin-top: 0;
+        font-size: 16px;
+      }
+      em,span {
+        font-size: 10px;
+      }
+
+      .post-img {
+        text-align: center;
+      }
+    }
+    .post-content {
+      padding: 5px 10px;
+    }
+  }
+}
