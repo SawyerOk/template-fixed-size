@@ -237,7 +237,6 @@ body {
       resize: none; }
 
 .h-tagline {
-  padding-top: 40px;
   clear: both;
   text-align: center;
   color: #fff; }
@@ -356,5 +355,15 @@ body {
     text-align: center; }
 .r-about .col-th .post-content {
   padding: 5px 10px; }
+
+.services-page .r-services {
+  height: 800px;
+  padding-top: 30px; }
+  .services-page .r-services .ser-group {
+    margin-top: 30px; }
+  .services-page .r-services .ser {
+    width: 200px;
+    float: left;
+    margin: 0 20px; }
 
 /*# sourceMappingURL=app.css.map */
