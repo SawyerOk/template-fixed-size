@@ -4,9 +4,13 @@ $active : #eead45;
   background: #eee;
   text-align: center;
   height: 350px;
+  margin-bottom: -25px;
 
   h2 {
-    @include h2-up;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-top: 20px;
   }
 
   .ser-group {
@@ -36,7 +40,7 @@ $active : #eead45;
 
   }
   a {
-
+    text-decoration: none;
     padding: 5px 30px;
     text-transform: uppercase;
     font-weight: 200;

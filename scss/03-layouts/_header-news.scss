@@ -1,18 +1,16 @@
 #header-news {
 
-  nav {
-    a {
-      color: black;
-      &.active {
-        color: $ac-col;
-      }
+  .header-img {
+    background : url(http://lorempixel.com/960/200/city/3/) no-repeat;
+    height: 200px;
+
+    h2 {
+      padding: 0 0 0 40px;
+      color: $ac-col;
     }
-  }
-
-  
-
-  .active {
-    color : $ac-col;
+    p {
+      padding: 25px 0 0 35px;
+      }
   }
 
 

@@ -3,7 +3,7 @@ footer{
   padding: 10px 25px;
   width: 960px;
   margin: 0 auto;
-  height: 350px;
+  height: 300px;
   color: #fff;
   background-color: #333;
 
@@ -12,6 +12,14 @@ footer{
   nav {
     clear: both;
     @include nav-b;
+    ul {
+      li {
+        a{
+          color: #fff;
+        }
+      }
+
+    }
   }
   .col-f {
     width: 960/2*1px - 60px;

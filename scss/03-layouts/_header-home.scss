@@ -2,9 +2,35 @@
   background : url(http://lorempixel.com/960/350/city/1/) no-repeat;;
   height: 350px;
 
-}
 
-// @media only screen and (max-width : 960px){
-//   #header-home {
-//     background-color: blue;}
-// }
+  .h-tagline{
+      padding-top: 20px;
+      clear: both;
+      text-align: center;
+      color: #fff;
+      p,a,h1 {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 700;
+      }
+
+      a {
+        margin-top: 40px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      h1 {
+          margin-bottom: 60px;
+      }
+
+      .btn-h {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+      }
+
+  }
+
+}

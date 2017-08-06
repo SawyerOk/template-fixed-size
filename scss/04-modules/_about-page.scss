@@ -1,9 +1,7 @@
 .about-info {
   height: 450px;
   background: #eee;
-  h2 {
-    padding-top: 20px;
-  }
+
   ul {
     li {
       margin-top: 15px;
@@ -20,15 +18,18 @@
 }
 
 .r-about {
+  height: 275px;
   .col-th {
     article.news-post {
       background: #ddd;
       position: relative;
-      top: -74px;
+      top: -56px;
+      border: 2px solid $bg-select;
       h2 {
         background: #fff;
         padding: 8px;
         text-align: left;
+        margin-top: 0px;
       }
       h3, p{
         margin: 5px;

@@ -1,8 +1,8 @@
 .r-news{
-    @include news-font;
+  @include b-sng;
+  height: 320px;
     padding: 10px 25px;
   .col-th {
-  
     h2 {
       padding-left: 140px;
     }

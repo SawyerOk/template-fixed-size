@@ -5,23 +5,11 @@
 
 header {
   width: 960px;
+  font-family: 'Sedgwick Ave', cursive;
   margin: auto;
-  font-family: 'Lato', sans-serif; }
-  header h1 {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  header p, header h2 {
-    margin-left: 15px; }
-  header h2 {
-    font-size: 42px;
-    margin-top: 10px;
-    letter-spacing: 3px;
-    font-weight: 400; }
-  header p {
-    font-size: 18px;
-    font-weight: 800;
-    padding-top: 40px; }
-  header nav ul {
-    list-style: none; }
+  color: #000; }
+  header nav {
+    font-family: 'Sedgwick Ave', cursive; }
     header nav ul li {
       display: inline-block;
       float: left;
@@ -29,23 +17,17 @@ header {
       padding-right: 5px;
       padding-bottom: 5px; }
       header nav ul li a {
-        text-decoration: none;
         font-size: 16px;
         text-transform: uppercase;
-        color: #fff;
+        color: #000;
         font-weight: 800; }
-  header nav .active {
-    color: #ffa500; }
-  header nav ul {
-    float: right; }
-    header nav ul a {
+    header nav .active {
+      color: #cc8400; }
+    header nav ul li a {
       padding-bottom: 5px;
-      border-bottom: 2px solid #fff; }
-      header nav ul a.active {
-        border-bottom: 2px solid #ffa500; }
-  header .header-img {
-    background: url(http://lorempixel.com/960/200/city/3/) no-repeat;
-    height: 200px; }
+      border-bottom: 2px solid; }
+  header .active {
+    color: #cc8400; }
 
 footer {
   -webkit-box-sizing: border-box;
@@ -54,27 +36,27 @@ footer {
   padding: 10px 25px;
   width: 960px;
   margin: 0 auto;
-  height: 350px;
+  height: 300px;
   color: #fff;
   background-color: #333; }
   footer nav {
-    clear: both; }
-    footer nav ul {
-      list-style: none; }
-      footer nav ul li {
-        display: inline-block;
-        float: left;
-        margin: 15px;
-        padding-right: 5px;
-        padding-bottom: 5px; }
-        footer nav ul li a {
-          text-decoration: none;
-          font-size: 16px;
-          text-transform: uppercase;
-          color: #fff;
-          font-weight: 800; }
+    clear: both;
+    font-family: 'Sedgwick Ave', cursive; }
+    footer nav ul li {
+      display: inline-block;
+      float: left;
+      margin: 15px;
+      padding-right: 5px;
+      padding-bottom: 5px; }
+      footer nav ul li a {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 800; }
     footer nav .active {
-      color: #ffa500; }
+      color: #cc8400; }
+    footer nav ul li a {
+      color: #fff; }
   footer .col-f {
     width: 420px; }
   footer .f-contact {
@@ -87,8 +69,7 @@ footer {
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif; }
+  box-sizing: border-box; }
   body ul {
     list-style: none; }
     body ul li a {
@@ -99,12 +80,36 @@ body {
 #header-home {
   background: url(http://lorempixel.com/960/350/city/1/) no-repeat;
   height: 350px; }
+  #header-home .h-tagline {
+    padding-top: 20px;
+    clear: both;
+    text-align: center;
+    color: #fff; }
+    #header-home .h-tagline p, #header-home .h-tagline a, #header-home .h-tagline h1 {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-weight: 700; }
+    #header-home .h-tagline a {
+      margin-top: 40px;
+      color: #fff;
+      text-decoration: none; }
+    #header-home .h-tagline h1 {
+      margin-bottom: 60px; }
+    #header-home .h-tagline .btn-h {
+      width: 40%;
+      margin: auto;
+      text-align: center;
+      padding: 10px 20px;
+      border: 2px solid #fff; }
 
 #container {
   width: 960px;
   margin: auto; }
+  #container p {
+    font-family: 'Muli', sans-serif;
+    font-size: 17px; }
   #container h2, #container h3, #container h4 {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Muli', sans-serif; }
   #container .col-th {
     height: 250px;
     float: left;
@@ -114,15 +119,20 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-#header-news nav a {
-  color: black; }
-  #header-news nav a.active {
-    color: #ffa500; }
-#header-news .active {
-  color: #ffa500; }
+#header-news .header-img {
+  background: url(http://lorempixel.com/960/200/city/3/) no-repeat;
+  height: 200px; }
+  #header-news .header-img h2 {
+    padding: 0 0 0 40px;
+    color: #cc8400; }
+  #header-news .header-img p {
+    padding: 25px 0 0 35px; }
 
 .r-news {
-  font-family: 'Raleway', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 320px;
   padding: 10px 25px; }
   .r-news .col-th h2 {
     padding-left: 140px; }
@@ -130,12 +140,12 @@ body {
 .r-services {
   background: #eee;
   text-align: center;
-  height: 350px; }
+  height: 350px;
+  margin-bottom: -25px; }
   .r-services h2 {
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    font-weight: 200;
-    font-size: 16px;
+    letter-spacing: 2px;
+    font-size: 20px;
     padding-top: 20px; }
   .r-services .ser-group {
     width: 100%;
@@ -153,6 +163,7 @@ body {
     .r-services .ser h3 {
       text-align: center; }
   .r-services a {
+    text-decoration: none;
     padding: 5px 30px;
     text-transform: uppercase;
     font-weight: 200;
@@ -163,15 +174,19 @@ body {
 .r-w-img {
   height: 300px;
   background: url(http://lorempixel.com/960/300/people/3/) no-repeat;
-  font-family: 'Josefin Slab', serif;
   color: #fff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  text-align: center; }
+  text-align: center;
+  margin-top: -20px; }
   .r-w-img h2 {
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    font-family: 'Sedgwick Ave', cursive; }
   .r-w-img p {
-    font-family: 'Raleway', sans-serif;
-    padding-top: 60px; }
+    padding-top: 60px;
+    font-family: 'Sedgwick Ave', cursive;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
 .r-partners {
   height: 300px; }
@@ -190,16 +205,11 @@ body {
         background: #fff;
         border: 1px solid #111; }
       .r-partners .par a.mak {
-        background: #ffa500; }
+        background: #cc8400; }
         .r-partners .par a.mak:hover {
-          color: #ffa500;
+          color: #cc8400;
           background: #fff; }
   .r-partners h2 {
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 16px;
-    padding-top: 20px;
     text-align: center; }
   .r-partners p {
     margin: 0px;
@@ -235,25 +245,6 @@ body {
       bottom: 0; }
     .r-form .fs-r textarea {
       resize: none; }
-
-.h-tagline {
-  clear: both;
-  text-align: center;
-  color: #fff; }
-  .h-tagline a {
-    margin-top: 40px;
-    color: #fff;
-    text-decoration: none; }
-  .h-tagline p, .h-tagline h1 {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  .h-tagline h1 {
-    margin-bottom: 60px; }
-  .h-tagline .btn-h {
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    padding: 10px 20px;
-    border: 2px solid #fff; }
 
 .news-main {
   width: 550px;
@@ -301,7 +292,8 @@ body {
         display: block; }
         .news-aside ul li a:hover {
           cursor: pointer;
-          border-left: 4px solid #3232ff; }
+          border-left: 4px solid #3232ff;
+          background: #9999ff; }
     .news-aside ul li:first-child a {
       background: #fff;
       cursor: default; }
@@ -324,8 +316,6 @@ body {
 .about-info {
   height: 450px;
   background: #eee; }
-  .about-info h2 {
-    padding-top: 20px; }
   .about-info ul li {
     margin-top: 15px; }
     .about-info ul li a {
@@ -334,27 +324,31 @@ body {
       .about-info ul li a:hover {
         color: #666; }
 
-.r-about .col-th article.news-post {
-  background: #ddd;
-  position: relative;
-  top: -74px; }
-  .r-about .col-th article.news-post h2 {
-    background: #fff;
-    padding: 8px;
-    text-align: left; }
-  .r-about .col-th article.news-post h3, .r-about .col-th article.news-post p {
-    margin: 5px; }
-  .r-about .col-th article.news-post p {
-    font-size: 12px; }
-  .r-about .col-th article.news-post h3 {
-    margin-top: 0;
-    font-size: 16px; }
-  .r-about .col-th article.news-post em, .r-about .col-th article.news-post span {
-    font-size: 10px; }
-  .r-about .col-th article.news-post .post-img {
-    text-align: center; }
-.r-about .col-th .post-content {
-  padding: 5px 10px; }
+.r-about {
+  height: 275px; }
+  .r-about .col-th article.news-post {
+    background: #ddd;
+    position: relative;
+    top: -56px;
+    border: 2px solid #9999ff; }
+    .r-about .col-th article.news-post h2 {
+      background: #fff;
+      padding: 8px;
+      text-align: left;
+      margin-top: 0px; }
+    .r-about .col-th article.news-post h3, .r-about .col-th article.news-post p {
+      margin: 5px; }
+    .r-about .col-th article.news-post p {
+      font-size: 12px; }
+    .r-about .col-th article.news-post h3 {
+      margin-top: 0;
+      font-size: 16px; }
+    .r-about .col-th article.news-post em, .r-about .col-th article.news-post span {
+      font-size: 10px; }
+    .r-about .col-th article.news-post .post-img {
+      text-align: center; }
+  .r-about .col-th .post-content {
+    padding: 5px 10px; }
 
 .services-page .r-services {
   height: 800px;

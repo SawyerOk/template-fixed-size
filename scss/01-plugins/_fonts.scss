@@ -1,23 +1,7 @@
-@mixin f-sans-serif {
-  font-family: 'Lato', sans-serif;
+@mixin h-font {
+  font-family: 'Sedgwick Ave', cursive;
 }
 
-@mixin news-font {
-  font-family: 'Raleway', sans-serif;
-}
-
-@mixin r-w-img {
-  font-family: 'Josefin Slab', serif;
-}
-
-@mixin h2-up {
-  @include f-sans-serif;
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 16px;
-  padding-top: 20px;
-}
-
-@mixin shadow-t {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+@mixin m-font {
+  font-family: 'Muli', sans-serif;
 }
